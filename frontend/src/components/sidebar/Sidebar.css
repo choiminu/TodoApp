@@ -1,0 +1,128 @@
+.side-bar-wrapper {
+  position: relative;
+  flex-grow: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #1e1e1e;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 사이드바 로고 시작 */
+.side-bar-logo {
+  padding: 1rem;
+  font-size: 18px;
+  color: #fff;
+}
+
+.side-bar-logo h1 {
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+/* 사이드바 로고 종료 */
+
+.search-box-wrapper {
+  position: relative;
+}
+
+/* 검색 시작  */
+.search-box-wrapper input {
+  width: 80%;
+  height: 30px;
+  background: #171717;
+  border-radius: 50px;
+  color: #707070;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding-left: 3rem;
+}
+
+.search-box-wrapper .ri-search-line {
+  position: absolute;
+  color: #707070;
+  left: 1.5rem;
+  top: 0.5rem;
+}
+
+/* 검색 종료  */
+
+/* 카테고리 시작 */
+
+.category-list-wrapper {
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.category-list-wrapper .title {
+  text-align: left;
+  color: #686868;
+}
+
+.category-list-wrapper button {
+  background-color: #171717;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: transform 0.05s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.todo-category-item:last-child {
+  margin-bottom: 0px;
+}
+
+.todo-category-item:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.active {
+  background: linear-gradient(to right, #8900ff, #e100ff);
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-category-item p {
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+.more-category {
+  text-align: left;
+  color: #686868;
+  margin-left: 1rem;
+}
+
+/* 사용자 정보 */
+.user-info-wrapper {
+  position: absolute;
+  height: 20px;
+  bottom: 3rem;
+}
+
+.user-info-wrapper button {
+  background-color: #272727;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #fff;
+}

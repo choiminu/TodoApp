@@ -1,0 +1,138 @@
+/* 전체 배경/정렬 */
+.auth-landing {
+  min-height: 90dvh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* 카드 */
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+/* 브랜드 타이틀 */
+.brand {
+  margin: 0 0 8px;
+  line-height: 0.9;
+  font-size: 56px;
+  font-weight: 900;
+}
+.brand-line1 {
+  display: block;
+  background: linear-gradient(90deg, #f953c6, #b91d73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.brand-line2 {
+  display: block;
+  background: linear-gradient(90deg, #7f00ff, #b91d73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 문구 */
+.tagline {
+  margin: 6px 0 20px;
+  color: #bdbdbd;
+}
+
+/* 버튼들 */
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.btn {
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn-primary {
+  background: linear-gradient(90deg, #8900ff, #e100ff);
+  color: #fff;
+}
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+.btn-ghost {
+  background: #222;
+  color: #e7e7e7;
+}
+.btn-ghost:hover {
+  filter: brightness(1.05);
+}
+
+/* 구분선 */
+.divider {
+  position: relative;
+  height: 1px;
+  background: #2a2a2a;
+  margin: 14px 0 18px;
+}
+.divider span {
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  transform: translateX(-50%);
+  background: #151515;
+  color: #8f8f8f;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+/* 소셜 버튼 */
+.socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.social-btn {
+  height: 42px;
+  border-radius: 12px;
+  background: #1e1e1e;
+  color: #e1e1e1;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.social-btn i {
+  font-size: 18px;
+}
+.social-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* 하단 작은 글 */
+.small {
+  color: #777;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.small a {
+  color: #bdbdbd;
+  text-decoration: underline;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .brand {
+    font-size: 44px;
+  }
+  .cta,
+  .socials {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,8 @@
+.calandar-warapper {
+  flex-grow: 0;
+  width: 700px;
+  height: 100vh;
+  background-color: #1e1e1e;
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
